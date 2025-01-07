@@ -1,0 +1,138 @@
+<!-- navigation is possible -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Company Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #cfd4d88e;
+            /* Light background for the header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Optional shadow for depth */
+        }
+
+        .logo img {
+            height: 50px;
+            /* Adjust logo size as needed */
+        }
+
+        .company-name {
+            font-size: 24px;
+        }
+
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            /* Space between nav links */
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #007BFF;
+            /* Link color */
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .signup {
+            background-color: #28A745;
+            color: white;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            /* Space around the search bar */
+        }
+
+        .search-bar input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            /* Adjust as needed */
+        }
+
+        .search-bar button {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="company-name" style="text-align: center;">
+        <strong>IES COLLEGE OF ENGINEERING</strong>
+    </h1>
+    <header>
+        <div class="logo">
+            <img src="https://iesce.info/uploads/userfiles/29-iescoekerala(5).jpg" alt="Company Logo" />
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/pages/Home.html">Home</a></li>
+                <li><a href="/pages/Products.html">Products</a></li>
+                <li><a href="/pages/Shopping.html">Shopping</a></li>
+                <li><a href="/pages/Product-Category.html">Product Category</a></li>
+                <li><a href="/pages/Payment.html">Payment</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="auth-buttons">
+                <button class="login">Login</button>
+                <button class="signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <img src="https://iesce.info/images/inner-banner-1.jpg">
+    </main>
+
+</body>
+
+</html>
