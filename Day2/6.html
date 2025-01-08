@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .filter-group label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .filter-group select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            text-align: center;
+            /* Center align text and image */
+        }
+
+        .product:hover {
+            transform: scale(1.03);
+        }
+
+        .product-image {
+            width: 200px;
+            /* Ensure images are responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+        }
+
+        .product p {
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #b12704;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Online Store</h1>
+    </header>
+
+    <div class="filters">
+        <div class="filter-group">
+            <label for="categoryFilter">Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="apparel">Apparel</option>
+                <option value="home">Home</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="priceFilter">Max Price:</label>
+            <select id="priceFilter">
+                <option value="all">All</option>
+                <option value="50">Under $50</option>
+                <option value="100">Under $100</option>
+                <option value="200">Under $200</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="productList" class="product-list">
+        <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m33-1.jpg" alt="Smartphone" class="product-image">
+            <h3>Smartphone</h3>
+            <p>Category: electronics</p>
+            <p class="price">$699</p>
+        </div>
+        <div class="product"><img src="https://static.vecteezy.com/system/resources/thumbnails/030/221/116/small/mockup-of-beautiful-laptop-with-multicolor-background-generative-ai-illustration-photo.jpg" alt="Laptop" class="product-image">
+            <h3>Laptop</h3>
+            <p>Category: electronics</p>
+            <p class="price">$999</p>
+        </div>
+        <div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQIV3EqiWe2I5RaTyEffeI8bXShT9cDPpC8gEx9KsQFpiR2dARsE3Ghj-SY0QiWewsWDU&usqp=CAU" alt="T-shirt" class="product-image">
+            <h3>T-shirt</h3>
+            <p>Category: apparel</p>
+            <p class="price">$29</p>
+        </div>
+        <div class="product"><img src="https://media.istockphoto.com/id/1878762903/photo/trendy-blue-jeans-trousers-on-a-rack-in-a-fashion-store.webp?a=1&b=1&s=612x612&w=0&k=20&c=1l1az4frRbEotdKTXqkyDcI7ZvBe9FFJdAm1m8ny17c=" alt="Jeans" class="product-image">
+            <h3>Jeans</h3>
+            <p>Category: apparel</p>
+            <p class="price">$49</p>
+        </div>
+        <div class="product"><img src="https://plus.unsplash.com/premium_photo-1661281243564-5acf9a1797ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Q29mZmVlJTIwTWFrZXJ8ZW58MHx8MHx8fDA%3D" alt="Coffee Maker" class="product-image">
+            <h3>Coffee Maker</h3>
+            <p>Category: home</p>
+            <p class="price">$79</p>
+        </div>
+        <div class="product"><img src="https://media.istockphoto.com/id/482713031/photo/blender-inside.webp?a=1&b=1&s=612x612&w=0&k=20&c=8bv_N7dQq4vvawHetEodoD14tE-5SxRt540oMrCEnJ4=" alt="Blender" class="product-image">
+            <h3>Blender</h3>
+            <p>Category: home</p>
+            <p class="price">$39</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Borders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .gallery {
+            width: 100%;
+        }
+
+        .row {
+            overflow: hidden;
+            /* Clear floats */
+            margin-bottom: 20px;
+            /* Space between rows */
+        }
+
+        .image-container {
+            width: 30%;
+            /* Each image container takes 30% of the row */
+            float: left;
+            /* Align images in a row */
+            margin: 0 1%;
+            /* Space between images */
+            box-sizing: border-box;
+            /* Include padding and border in width */
+        }
+
+        .image-container img {
+            width: 100%;
+            /* Make the image fill the container */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        /* Border Styles */
+        .border-style-1 {
+            border: 2px solid red;
+        }
+
+        .border-style-2 {
+            border: 5px dashed green;
+        }
+
+        .border-style-3 {
+            border: 3px dotted blue;
+        }
+
+        .border-style-4 {
+            border: 4px double orange;
+        }
+
+        .border-style-5 {
+            border: 2px groove purple;
+        }
+
+        .border-style-6 {
+            border: 5px ridge pink;
+        }
+
+        .border-style-7 {
+            border: 3px inset brown;
+        }
+
+        .border-style-8 {
+            border: 4px outset gray;
+        }
+
+        .border-style-9 {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="row">
+            <div class="image-container border-style-1">
+                <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 1">
+            </div>
+            <div class="image-container border-style-2">
+                <img src="https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 2">
+            </div>
+            <div class="image-container border-style-3">
+                <img src="https://images.pexels.com/photos/326212/pexels-photo-326212.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container border-style-4">
+                <img src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 4">
+            </div>
+            <div class="image-container border-style-5">
+                <img src="https://images.pexels.com/photos/325045/pexels-photo-325045.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 5">
+            </div>
+            <div class="image-container border-style-6">
+                <img src="https://images.pexels.com/photos/17811/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container border-style-7">
+                <img src="https://images.pexels.com/photos/572861/pexels-photo-572861.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 7">
+            </div>
+            <div class="image-container border-style-8">
+                <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 8">
+            </div>
+            <div class="image-container border-style-9">
+                <img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Image 9">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .toggle-container {
+            margin-bottom: 30px;
+        }
+
+        .toggle-btn {
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 30px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-btn.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .basic {
+            border-left: 5px solid #4CAF50;
+        }
+
+        .pro {
+            border-left: 5px solid #2196F3;
+        }
+
+        .premium {
+            border-left: 5px solid #FF9800;
+        }
+
+        .recommended-badge {
+            background-color: #FFD700;
+            /* Gold color */
+            color: #333;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        .pricing-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px;
+            flex-basis: 30%;
+            transition: transform 0.3s;
+            position: relative;
+            /* Relative positioning for absolute child styling */
+        }
+
+        .pricing-card.pro {
+
+            /* Green border for Pro plan */
+            transform: scale(1.05);
+            /* Slightly enlarge the Pro card */
+        }
+
+
+
+
+
+
+
+        .feature {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 25px;
+            /* Position above the feature */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            /* Tooltip width */
+            opacity: 0;
+            /* Initial opacity */
+            transition: opacity 0.3s;
+            /* Fade effect */
+        }
+
+        .feature:hover .tooltip {
+            visibility: visible;
+            /* Change visibility on hover */
+            opacity: 1;
+            /* Fade in */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Choose Your Plan</h1>
+
+        <!-- Toggle Button -->
+        <div class="toggle-container">
+            <button class="toggle-btn active" id="monthly-btn">Monthly</button>
+            <button class="toggle-btn" id="annual-btn">Annual</button>
+        </div>
+
+        <div class="pricing-table">
+            <div class="pricing-card basic">
+                <h2>Basic</h2>
+                <p class="price" data-monthly="$19" data-annual="$199">$19/month</p>
+                <ul>
+                    <li><span class="feature">1 Project</span><span class="tooltip">Only one project allowed</span></li>
+                    <li><span class="feature">Basic Support</span><span class="tooltip">Email support during business
+                            hours</span></li>
+                    <li><span class="feature">Community Access</span><span class="tooltip">Access to community
+                            forums</span></li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+            <div class="pricing-card pro">
+                <h2>Pro</h2>
+                <div class="recommended-badge">Recommended</div>
+                <p class="price" data-monthly="$39" data-annual="$399">$39/month</p>
+                <ul>
+                    <li><span class="feature">5 Projects</span><span class="tooltip">Max 5 active projects</span></li>
+                    <li><span class="feature">Priority Support</span><span class="tooltip">24/7 priority support</span>
+                    </li>
+                    <li><span class="feature">Forum Access</span><span class="tooltip">Access to exclusive forums</span>
+                    </li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+            <div class="pricing-card premium">
+                <h2>Premium</h2>
+                <p class="price" data-monthly="$79" data-annual="$799">$79/month</p>
+                <ul>
+                    <li><span class="feature">Unlimited Projects</span><span class="tooltip">Work on as many projects as
+                            you want</span></li>
+                    <li><span class="feature">24/7 Support</span><span class="tooltip">Priority response at any
+                            time</span></li>
+                    <li><span class="feature">Exclusive Workshops</span><span class="tooltip">Access to workshops by
+                            experts</span></li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const monthlyBtn = document.getElementById('monthly-btn');
+        const annualBtn = document.getElementById('annual-btn');
+        const priceElements = document.querySelectorAll('.price');
+
+        monthlyBtn.addEventListener('click', () => {
+            monthlyBtn.classList.add('active');
+            annualBtn.classList.remove('active');
+            updatePrices('monthly');
+        });
+
+        annualBtn.addEventListener('click', () => {
+            annualBtn.classList.add('active');
+            monthlyBtn.classList.remove('active');
+            updatePrices('annual');
+        });
+
+        function updatePrices(plan) {
+            priceElements.forEach(price => {
+                price.textContent = price.dataset[plan];
+            });
+        }
+    </script>
+</body>
+
+</html>

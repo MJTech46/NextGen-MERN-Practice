@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .filter-group label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .filter-group select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            text-align: center;
+            /* Center align text and image */
+        }
+
+        .product:hover {
+            transform: scale(1.03);
+        }
+
+        .product-image {
+            max-width: 100%;
+            /* Ensure images are responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+        }
+
+        .product p {
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #b12704;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Online Store</h1>
+    </header>
+
+    <div class="filters">
+        <div class="filter-group">
+            <label for="categoryFilter">Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="apparel">Apparel</option>
+                <option value="home">Home</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="priceFilter">Max Price:</label>
+            <select id="priceFilter">
+                <option value="all">All</option>
+                <option value="50">Under $50</option>
+                <option value="100">Under $100</option>
+                <option value="200">Under $200</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="productList" class="product-list">
+        <!-- Products will be dynamically populated here -->
+    </div>
+
+    <script>
+        const products = [
+            { id: 1, name: "Smartphone", category: "electronics", price: 699, imageUrl: "https://via.placeholder.com/150" },
+            { id: 2, name: "Laptop", category: "electronics", price: 999, imageUrl: "https://via.placeholder.com/150" },
+            { id: 3, name: "T-shirt", category: "apparel", price: 29, imageUrl: "https://via.placeholder.com/150" },
+            { id: 4, name: "Jeans", category: "apparel", price: 49, imageUrl: "https://via.placeholder.com/150" },
+            { id: 5, name: "Coffee Maker", category: "home", price: 79, imageUrl: "https://via.placeholder.com/150" },
+            { id: 6, name: "Blender", category: "home", price: 39, imageUrl: "https://via.placeholder.com/150" },
+        ];
+
+        function displayProducts(productsToDisplay) {
+            const productList = document.getElementById('productList');
+            productList.innerHTML = '';
+            productsToDisplay.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
+                productDiv.innerHTML = `<img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+                               <h3>${product.name}</h3>
+                               <p>Category: ${product.category}</p>
+                               <p class="price">$${product.price}</p>`;
+                productList.appendChild(productDiv);
+            });
+        }
+
+        function applyFilters() {
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            const priceFilter = document.getElementById('priceFilter').value;
+
+            const filteredProducts = products.filter(product => {
+                const isCategoryMatch = categoryFilter === "all" || product.category === categoryFilter;
+                const isPriceMatch = priceFilter === "all" || product.price <= priceFilter;
+                return isCategoryMatch && isPriceMatch;
+            });
+
+            displayProducts(filteredProducts);
+        }
+
+        document.getElementById('categoryFilter').addEventListener('change', applyFilters);
+        document.getElementById('priceFilter').addEventListener('change', applyFilters);
+
+        // Initial display of products
+        displayProducts(products);
+    </script>
+</body>
+
+</html>
