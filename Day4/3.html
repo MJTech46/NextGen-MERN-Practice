@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        video {
+            width: 600px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <video id="videoPlayer" width="600" controls>
+        <source src="videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="controls">
+        <button id="backButton">Back 5s</button>
+        <button id="playPauseButton">Play</button>
+        <button id="forwardButton">Forward 5s</button>
+    </div>
+
+    <script>
+        const video = document.getElementById('videoPlayer');
+        const playPauseButton = document.getElementById('playPauseButton');
+        const backButton = document.getElementById('backButton');
+        const forwardButton = document.getElementById('forwardButton');
+
+        // Play/Pause Functionality
+        playPauseButton.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                video.pause();
+                playPauseButton.textContent = 'Play';
+            }
+        });
+
+        // Skip Backward Functionality
+        backButton.addEventListener('click', () => {
+            video.currentTime = Math.max(0, video.currentTime - 5);
+        });
+
+        // Skip Forward Functionality
+        forwardButton.addEventListener('click', () => {
+            video.currentTime = Math.min(video.duration, video.currentTime + 5);
+        });
+    </script>
+
+</body>
+</html>

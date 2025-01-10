@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb Toggle</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        #bulb {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: black;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        #bulb.on {
+            background-color: yellow;
+            box-shadow: 0 0 20px yellow;
+        }
+
+        #toggleButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="bulb"></div>
+    <button id="toggleButton">Turn On</button>
+
+    <script>
+        const bulb = document.getElementById('bulb');
+        const button = document.getElementById('toggleButton');
+
+        button.addEventListener('click', () => {
+            bulb.classList.toggle('on');
+
+            if (bulb.classList.contains('on')) {
+                button.textContent = 'Turn Off';
+            } else {
+                button.textContent = 'Turn On';
+            }
+        });
+    </script>
+</body>
+</html>
