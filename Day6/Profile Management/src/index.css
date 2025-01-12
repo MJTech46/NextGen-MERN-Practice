@@ -1,0 +1,411 @@
+/* General styles for the app */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* App container */
+.app {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  margin-top: 20px;
+}
+
+/* Overview Page */
+.overview {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.profile-details .title {
+  font-size: 18px;
+  color: #555;
+}
+
+.profile-details .location {
+  font-size: 16px;
+  color: #777;
+}
+
+/* About Section */
+.about h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Experience Section */
+.experience h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.experience-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Education Section */
+.education h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.education-item {
+  margin-bottom: 20px;
+}
+
+.education-item h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.education-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Skills Section */
+.skills h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* 404 Page */
+.not-found {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.not-found h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.not-found p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.back-home-link {
+  font-size: 16px;
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+}
+
+.back-home-link:hover {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* App container */
+.app {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  margin-top: 20px;
+}
+
+/* Overview Page */
+.overview {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.overview h2 {
+  margin: 0 0 10px 0;
+}
+
+.overview-info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.overview-info strong {
+  font-weight: bold;
+}
+
+/* Orders Page */
+.orders {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.orders h2 {
+  margin: 0 0 20px 0;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+}
+
+.order-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.order-list strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Settings Page */
+.settings {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings h2 {
+  margin-bottom: 20px;
+}
+
+.settings form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* 404 Page */
+.not-found {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.not-found h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.not-found p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.back-home-link {
+  font-size: 16px;
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+}
+
+.back-home-link:hover {
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+}

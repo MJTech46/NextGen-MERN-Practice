@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+  background-color: #e0f7fa;
+  color: #212121;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #f50057;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 12px 0;
+  color: #fff;
+  background-color: #f50057;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #c51162;
+}
+
+.btn-primary {
+  background-color: #1de9b6;
+}
+
+.btn-primary:hover {
+  background-color: #00bfa5;
+}
+
+.btn-secondary {
+  background-color: #795548;
+}
+
+.btn-secondary:hover {
+  background-color: #5d4037;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263238;
+  padding: 15px 30px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #ffab00;
+}
+
+/* Home Page */
+.hero {
+  background-color: #f50057;
+  color: #fff;
+  padding: 60px 25px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.feature {
+  text-align: center;
+  padding: 15px;
+  max-width: 350px;
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  color: #f50057;
+}
+
+/* Products Page */
+.products-header {
+  text-align: center;
+  padding: 30px;
+  background-color: #eceff1;
+}
+
+.products-title {
+  font-size: 2.5rem;
+  color: #f50057;
+}
+
+.products-subtitle {
+  font-size: 1.2rem;
+  color: #607d8b;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.product-card {
+  border: 2px solid #b0bec5;
+  border-radius: 10px;
+  width: 320px;
+  padding: 25px;
+  text-align: center;
+  margin: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 1.8rem;
+  color: #f50057;
+  margin: 15px 0;
+}
+
+.product-description {
+  font-size: 1.2rem;
+  color: #607d8b;
+  margin-bottom: 20px;
+}
+
+/* Cart Page */
+.cart {
+  text-align: center;
+  padding: 30px;
+}
+
+.cart h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+/* 404 Page */
+.not-found {
+  text-align: center;
+  padding: 60px;
+}
+
+.not-found h1 {
+  font-size: 3rem;
+  color: #d32f2f;
+}
