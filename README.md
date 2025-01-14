@@ -10,7 +10,7 @@ Welcome to the **NextGen MERN Full Stack Web Development Bootcamp** repository! 
 - **Location**: IES College of Engineering  Chittilappilly, Thrissur
 - **Mode**: On-campus
 - **Type**: Bootcamp/Workshop
-- **Duration**: 9AM to 4PM
+- **Duration**: 06/01/2025 to 17/01/2025
 - **Audience**: Students and aspiring developers
 - **Objective**: Build practical knowledge of the MERN stack and develop industry-level applications.
 
