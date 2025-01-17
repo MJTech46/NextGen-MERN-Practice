@@ -1,0 +1,21 @@
+[2025-01-16 04:37:03] Error: Error: Simulated error ;)
+Stack Trace: Error: Simulated error ;)
+    at simulateError (file:///C:/Users/Exam/Desktop/NextGen-MERN-Practice/Day5/abin-santhosh/backend1/error%20log/main.js:21:13)
+    at file:///C:/Users/Exam/Desktop/NextGen-MERN-Practice/Day5/abin-santhosh/backend1/error%20log/main.js:28:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+[2025-01-16 04:37:23] Error: Error: Simulated error 2 ;)
+Stack Trace: Error: Simulated error 2 ;)
+    at simulateError (file:///C:/Users/Exam/Desktop/NextGen-MERN-Practice/Day5/abin-santhosh/backend1/error%20log/main.js:21:13)
+    at file:///C:/Users/Exam/Desktop/NextGen-MERN-Practice/Day5/abin-santhosh/backend1/error%20log/main.js:28:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+[2025-01-16 04:37:55] Error: Error: Simulated error ;)
+Stack Trace: Error: Simulated error ;)
+    at simulateError (file:///C:/Users/Exam/Desktop/NextGen-MERN-Practice/Day5/abin-santhosh/backend1/error%20log/main.js:21:13)
+    at file:///C:/Users/Exam/Desktop/NextGen-MERN-Practice/Day5/abin-santhosh/backend1/error%20log/main.js:28:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)

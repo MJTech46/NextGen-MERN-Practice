@@ -1,0 +1,8 @@
+Name: John Doe
+Email: johndoe@example.com
+Message: This website is amazing! Keep up the good work.
+
+Name: jose k j
+Email: josekj@example.com
+Message: This website is really good.
+
