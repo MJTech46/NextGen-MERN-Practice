@@ -31,14 +31,12 @@ Welcome to the **NextGen MERN Full Stack Web Development Bootcamp** repository! 
 |------------|------------------------------------------|
 | Day 1      | Introduction to MERN Stack               |
 | Day 2      | Setting Up the Development Environment   |
-| Day 3-4    | Backend Development with Node.js & Express|
-| Day 5-6    | Frontend Development with React          |
+| Day 3-4    | Frontend Development with React
+| Day 5-6    | Backend Development with Node.js & Express  |
 | Day 7      | Database Management with MongoDB         |
 | Day 8      | Integrating Frontend and Backend         |
 | Day 9      | Deployment and Hosting                   |
 | Day 10     | Capstone Project Showcase & Review       |
-
-*(Note: This is a tentative schedule and is subject to change.)*
 
 ---
 
